@@ -1,0 +1,32 @@
+title: Política Boa
+description: O Instituto Política Boa, também denominado "IPB", é constituído como uma Organização da Sociedade Civil (OSC), sem fins lucrativos, com finalidades diversas desde educação, assessorias e mentorias, Tecnologias da informação, Responsabilidade social e ambiental e democracia.
+hero:
+  title: Instituto Política BOA
+  links:
+    - label: Acompanhe no Instagram
+      icon: i-heroicons-arrow-top-right-on-square-20-solid
+      trailing: true
+      to: https://www.instagram.com/institutopoliticaboa/
+      size: xl
+      target: _blank
+      color: blue
+faq:
+  title: Dúvidas Frequentes
+  description: Dúvidas sobre o Instituto Política Boa? Confira as perguntas frequentes.
+  items:
+    - label: O que é o Instituto Política Boa?
+      content: O Instituto Política Boa, também denominado "IPB", é constituído como uma Organização da Sociedade Civil (OSC), sem fins lucrativos, de duração indeterminada, com sede e foro na cidade de Florianópolis, estado de Santa Catarina.
+      defaultOpen: true
+    - label: O Instituto Política Boa (IPB) tem por finalidades?
+      content: 
+        'I - educação: promover pesquisas, cursos, publicação de livros e a criação de conteúdos para redes sociais com foco no desenvolvimento educacional e de políticas públicas;
+        II - assessorias e mentorias: prestar serviços de assessoria e mentorias a indivíduos, organizações e coletividades; 
+        III - tecnologias da informação: desenvolver soluções inovadoras baseadas em tecnologias da informação, promovendo a modernização e inclusão digital;
+        IV - responsabilidade social e ambiental: incentivar práticas de responsabilidade social e ambiental, com foco na sustentabilidade e no desenvolvimento da cidadania;
+        V - democracia: promover valores da ética, da paz, da cidadania, da democracia e de outros valores universais.'
+    - label: Princípios e Objetivos?
+      content:
+        'I - promoção da cidadania e dos direitos humanos; 
+        II - transparência e responsabilidade na gestão dos recursos;
+        III - compromisso com a educação e o desenvolvimento sociocultural;
+        IV - sustentabilidade ambiental.'
