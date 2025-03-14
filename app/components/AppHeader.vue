@@ -1,31 +1,50 @@
-<script setup lang="ts">
-const nuxtApp = useNuxtApp()
-const { activeHeadings, updateHeadings } = useScrollspy()
-
-const links = computed(() => [{
-  label: 'FAQ',
-  to: '#faq',
-  icon: 'i-heroicons-question-mark-circle',
-  active: activeHeadings.value.includes('faq')
-}])
-
-nuxtApp.hooks.hookOnce('page:finish', () => {
-  updateHeadings([
-    document.querySelector('#faq')
-  ])
-})
-</script>
-
 <template>
   <UHeader :links="links">
     <template #logo>
-      <span class="text-primary">
-        IPB
-      </span>
+      IPB
+    </template>
+
+    <template #right>
+      <UButton
+        label="Sign in"
+        color="gray"
+        to="/login"
+      />
+      <UButton
+        label="Sign up"
+        icon="i-heroicons-arrow-right-20-solid"
+        trailing
+        color="black"
+        to="/signup"
+        class="hidden lg:flex"
+      />
     </template>
 
     <template #panel>
-      <UAsideLinks :links="links" />
+      <UNavigationTree
+        :links="mapContentNavigation(navigation)"
+        default-open
+      />
     </template>
   </UHeader>
 </template>
+
+<script setup lang="ts">
+import type { NavItem } from '@nuxt/content'
+
+const navigation = inject<Ref<NavItem[]>>('navigation', ref([]))
+
+const links = [{
+  label: 'Home',
+  to: '/'
+}, {
+  label: 'Docs',
+  to: '/docs'
+}, {
+  label: 'Preços',
+  to: '/pricing'
+}, {
+  label: 'Blog',
+  to: '/blog'
+}]
+</script>
