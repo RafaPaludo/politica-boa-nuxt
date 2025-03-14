@@ -1,26 +1,3 @@
-<script setup lang="ts">
-import type { BlogPost } from '~/types'
-
-const { data: page } = await useAsyncData('blog', () => queryContent('/blog').findOne())
-if (!page.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
-}
-
-const { data: posts } = await useAsyncData('posts', () => queryContent<BlogPost>('/blog')
-  .where({ _extension: 'md' })
-  .sort({ date: -1 })
-  .find())
-
-useSeoMeta({
-  title: page.value.title,
-  ogTitle: page.value.title,
-  description: page.value.description,
-  ogDescription: page.value.description
-})
-
-defineOgImageComponent('Saas')
-</script>
-
 <template>
   <UContainer>
     <UPageHeader
@@ -50,3 +27,26 @@ defineOgImageComponent('Saas')
     </UPageBody>
   </UContainer>
 </template>
+
+<script setup lang="ts">
+import type { BlogPost } from '~/types'
+
+const { data: page } = await useAsyncData('blog', () => queryContent('/blog').findOne())
+if (!page.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+}
+
+const { data: posts } = await useAsyncData('posts', () => queryContent<BlogPost>('/blog')
+  .where({ _extension: 'md' })
+  .sort({ date: -1 })
+  .find())
+
+useSeoMeta({
+  title: page.value.title,
+  ogTitle: page.value.title,
+  description: page.value.description,
+  ogDescription: page.value.description
+})
+
+defineOgImageComponent('Saas')
+</script>

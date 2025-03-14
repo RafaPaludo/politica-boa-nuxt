@@ -1,28 +1,7 @@
-<script setup lang="ts">
-import type { NavItem } from '@nuxt/content'
-
-const navigation = inject<Ref<NavItem[]>>('navigation', ref([]))
-
-const links = [{
-  label: 'Docs',
-  to: '/docs'
-}, {
-  label: 'Pricing',
-  to: '/pricing'
-}, {
-  label: 'Blog',
-  to: '/blog'
-}]
-</script>
-
 <template>
   <UHeader :links="links">
     <template #logo>
-      Nuxt UI Pro <UBadge
-        label="SaaS"
-        variant="subtle"
-        class="mb-0.5"
-      />
+      IPB
     </template>
 
     <template #right>
@@ -49,3 +28,23 @@ const links = [{
     </template>
   </UHeader>
 </template>
+
+<script setup lang="ts">
+import type { NavItem } from '@nuxt/content'
+
+const navigation = inject<Ref<NavItem[]>>('navigation', ref([]))
+
+const links = [{
+  label: 'Home',
+  to: '/'
+}, {
+  label: 'Docs',
+  to: '/docs'
+}, {
+  label: 'Preços',
+  to: '/pricing'
+}, {
+  label: 'Blog',
+  to: '/blog'
+}]
+</script>

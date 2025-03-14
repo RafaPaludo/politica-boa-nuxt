@@ -1,3 +1,15 @@
+<template>
+  <div>
+    <NuxtLoadingIndicator />
+
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+
+    <UNotifications />
+  </div>
+</template>
+
 <script setup lang="ts">
 const colorMode = useColorMode()
 
@@ -24,15 +36,3 @@ useSeoMeta({
   twitterCard: 'summary_large_image'
 })
 </script>
-
-<template>
-  <div>
-    <NuxtLoadingIndicator />
-
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-
-    <UNotifications />
-  </div>
-</template>
