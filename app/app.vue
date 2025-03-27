@@ -1,15 +1,3 @@
-<template>
-  <div>
-    <NuxtLoadingIndicator />
-
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-
-    <UNotifications />
-  </div>
-</template>
-
 <script setup lang="ts">
 const colorMode = useColorMode()
 
@@ -35,4 +23,47 @@ useSeoMeta({
   twitterImage: 'https://saas-template.nuxt.dev/social-card.png',
   twitterCard: 'summary_large_image'
 })
+
+const { data: navigation } = await useAsyncData('navigation', () => queryCollectionNavigation('docs'), {
+  transform: data => data.find(item => item.path === '/docs')?.children || []
+})
+const { data: files } = useLazyAsyncData('search', () => queryCollectionSearchSections('docs'), {
+  server: false
+})
+
+const links = [{
+  label: 'Docs',
+  icon: 'i-lucide-book',
+  to: '/docs/getting-started'
+}, {
+  label: 'Pricing',
+  icon: 'i-lucide-credit-card',
+  to: '/pricing'
+}, {
+  label: 'Blog',
+  icon: 'i-lucide-pencil',
+  to: '/blog'
+}]
+
+provide('navigation', navigation)
 </script>
+
+<template>
+  <UApp>
+    <NuxtLoadingIndicator />
+
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+
+    <ClientOnly>
+      <LazyUContentSearch
+        :files="files"
+        shortcut="meta_k"
+        :navigation="navigation"
+        :links="links"
+        :fuse="{ resultLimit: 42 }"
+      />
+    </ClientOnly>
+  </UApp>
+</template>

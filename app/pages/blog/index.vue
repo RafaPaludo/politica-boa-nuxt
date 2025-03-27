@@ -1,3 +1,19 @@
+<script setup lang="ts">
+const route = useRoute()
+
+const { data: page } = await useAsyncData('blog', () => queryCollection('blog').first())
+const { data: posts } = await useAsyncData(route.path, () => queryCollection('posts').all())
+
+useSeoMeta({
+  title: page.value?.title,
+  ogTitle: page.value?.title,
+  description: page.value?.description,
+  ogDescription: page.value?.description
+})
+
+defineOgImageComponent('Saas')
+</script>
+
 <template>
   <UContainer>
     <UPageHeader
@@ -6,11 +22,11 @@
     />
 
     <UPageBody>
-      <UBlogList>
+      <UBlogPosts>
         <UBlogPost
           v-for="(post, index) in posts"
           :key="index"
-          :to="post._path"
+          :to="post.path"
           :title="post.title"
           :description="post.description"
           :image="post.image"
@@ -19,34 +35,12 @@
           :badge="post.badge"
           :orientation="index === 0 ? 'horizontal' : 'vertical'"
           :class="[index === 0 && 'col-span-full']"
+          variant="naked"
           :ui="{
             description: 'line-clamp-2'
           }"
         />
-      </UBlogList>
+      </UBlogPosts>
     </UPageBody>
   </UContainer>
 </template>
-
-<script setup lang="ts">
-import type { BlogPost } from '~/types'
-
-const { data: page } = await useAsyncData('blog', () => queryContent('/blog').findOne())
-if (!page.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
-}
-
-const { data: posts } = await useAsyncData('posts', () => queryContent<BlogPost>('/blog')
-  .where({ _extension: 'md' })
-  .sort({ date: -1 })
-  .find())
-
-useSeoMeta({
-  title: page.value.title,
-  ogTitle: page.value.title,
-  description: page.value.description,
-  ogDescription: page.value.description
-})
-
-defineOgImageComponent('Saas')
-</script>

@@ -1,14 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  extends: ['@nuxt/ui-pro'],
-
   modules: [
-    '@nuxt/content',
     '@nuxt/eslint',
-    '@nuxt/fonts',
     '@nuxt/image',
-    '@nuxt/ui',
-    '@nuxthq/studio',
+    '@nuxt/ui-pro',
+    '@nuxt/content',
     '@vueuse/nuxt',
     'nuxt-og-image'
   ],
@@ -17,12 +13,9 @@ export default defineNuxtConfig({
     enabled: true
   },
 
-  colorMode: {
-    disableTransition: true
-  },
+  css: ['~/assets/css/main.css'],
 
   routeRules: {
-    '/api/search.json': { prerender: true },
     '/docs': { redirect: '/docs/getting-started', prerender: false }
   },
 
@@ -33,26 +26,11 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-07-11',
 
   nitro: {
-    preset: 'cloudflare_pages',
     prerender: {
       routes: [
-        '/',
-        '/docs'
+        '/'
       ],
       crawlLinks: true
-    }
-  },
-
-  typescript: {
-    strict: false
-  },
-
-  hooks: {
-    // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
-    'components:extend': (components) => {
-      const globals = components.filter(c => ['UButton'].includes(c.pascalName))
-
-      globals.forEach(c => c.global = true)
     }
   },
 
