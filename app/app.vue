@@ -1,5 +1,8 @@
 <script setup lang="ts">
 const colorMode = useColorMode()
+const config = useRuntimeConfig()
+
+const gtmId = config.public.gtmId
 
 const color = computed(() => colorMode.value === 'dark' ? '#111827' : 'white')
 
@@ -14,7 +17,20 @@ useHead({
   ],
   htmlAttrs: {
     lang: 'en'
-  }
+  },
+  script: [
+    {
+      id: 'gtm-script',
+      innerHTML: `
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','${gtmId}');
+      `,
+      type: 'text/javascript'
+    }
+  ]
 })
 
 useSeoMeta({
@@ -55,6 +71,16 @@ provide('navigation', navigation)
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
+
+    <ClientOnly>
+      <noscript v-if="gtmId">
+        <iframe
+        :src="`https://www.googletagmanager.com/ns.html?id=${gtmId}`"
+        height="0" width="0" style="display:none;visibility:hidden"
+        >
+        </iframe>
+      </noscript>
+    </ClientOnly>
 
     <ClientOnly>
       <LazyUContentSearch

@@ -15,6 +15,12 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  runtimeConfig: {
+    public: {
+      gtmId: process.env.NUXT_GTM_ID ?? ''
+    }
+  },
+
   routeRules: {
     '/docs': { redirect: '/docs/getting-started', prerender: false }
   },
