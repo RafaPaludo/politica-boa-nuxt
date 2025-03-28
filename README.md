@@ -113,3 +113,14 @@ Read more on [Nuxt Studio docs](https://content.nuxt.com/studio/setup).
 ## Renovate integration
 
 Install [Renovate GitHub app](https://github.com/apps/renovate/installations/select_target) on your repository and you are good to go.
+
+
+----
+
+Comandos úteis:
+
+Organiza o arquivo para o ESLint não apontar erros de ordenação:
+
+```
+npx eslint --fix nuxt.config.ts
+```
