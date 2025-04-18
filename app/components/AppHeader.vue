@@ -18,7 +18,7 @@ import { siteInfo } from '~/config/siteInfo'
   <UHeader>
     <template #left>
       <NuxtLink to="/">
-        <LogoPro class="w-auto h-6 shrink-0" />
+        <LogoPro class="w-auto h-10 shrink-0" />
       </NuxtLink>
     </template>
 

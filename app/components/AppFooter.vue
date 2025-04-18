@@ -25,11 +25,7 @@ const columns = [{
   <UFooter :ui="{ top: 'border-b border-[var(--ui-border)]' }">
     <template #top>
       <UContainer>
-        <UFooterColumns :columns="columns">
-          <template #right>
-            <SubscribeForm />
-          </template>
-        </UFooterColumns>
+        <UFooterColumns :columns="columns" />
       </UContainer>
     </template>
 

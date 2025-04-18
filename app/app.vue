@@ -18,6 +18,9 @@ useHead({
   htmlAttrs: {
     lang: 'en'
   },
+  bodyAttrs: {
+    class: 'scroll-smooth'
+  },
   script: [
     {
       id: 'gtm-script',
@@ -93,3 +96,15 @@ provide('navigation', navigation)
     </ClientOnly>
   </UApp>
 </template>
+
+<style>
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+</style>

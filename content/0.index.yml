@@ -2,8 +2,9 @@ title: Política Boa
 description: Nuxt UI Pro is a collection of premium Vue components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.
 navigation: false
 hero:
-  title: O Progresso que Você busca, entregue pelo Nosso Instituto
+  title: O progresso que você busca, entregue pelo nosso Instituto
   description: No mundo complexo da política, sindicatos e organizações sociais, alcançar seus objetivos requer mais do que apenas esforço – exige estratégia, liderança e inovação. Nosso instituto oferece as ferramentas e o suporte necessários para alcançar resultados reais.
+
 sections:
   - title: Planejamento Estratégico
     description: Transformar sua visão em realidade, definindo um caminho claro e eficaz para atingir seus objetivos.
@@ -47,6 +48,46 @@ sections:
       - name: Tech
         description: Simplificar tarefas complexas, automatizar processos e liberar tempo para se concentrar no que realmente importa, com o apoio de softwares e aplicativos desenvolvidos sob medida para suas necessidades.
         icon: i-lucide-monitor-cog
+
+members:
+  title: Membros
+  description: "Nosso time é formado por especialistas em diversas áreas, prontos para ajudar você a alcançar seus objetivos."
+  items: 
+    - title: Sibelli D’Agostini
+      work: Taquigrafia
+      description: Formada em letras e direito com mais de 20 anos de experiência em redação e revisão textual.
+      src: /img/members/imagem_membro_quadrado.jpg
+
+    - title: Gabriel Bedin Slevinski
+      work: Membro
+      description: Professor e desenvolvedor de conteúdos com mais de 10 anos de atuação em ambas as áreas
+      src: /img/members/imagem_membro_quadrado.jpg
+
+    - title: Francis Fróes
+      work: Membro
+      description: Professor e publicitário com mais de 30 anos de experiência em criação e desenvolvimento de campanhas publicitárias.
+      src: /img/members/imagem_membro_quadrado.jpg
+
+    - title: Tiago Vergara Bitencourt
+      work: Membro
+      description: Eletricitário formado em TI e engenharia civil com mais de 30 anos de atuação TI e redes sociais
+      src: /img/members/imagem_membro_quadrado.jpg
+
+    - title: Mario César  D’Agostini
+      work: Membro
+      description: Advogado e empresário com mais de 30 anos de atuação no serviço público, no direito e na administração de empresas.
+      src: /img/members/imagem_membro_quadrado.jpg
+
+    - title: Rafael Ricardo P. Paludo
+      work: Membro
+      description: Graduado em redes sociais com mais de cinco anos de atuação no desenvolvimento de software de empresas de tecnologia e do ramo financeiro.
+      src: /img/members/imagem_membro_quadrado.jpg
+
+    - title: Eduardo José P. Paludo
+      work: Membro
+      description: Técnico em administração e gestão em redes sociais.
+      src: /img/members/imagem_membro_quadrado.jpg
+
 features:
   title: Features That Set Us Apart
   description: Our platform combines enterprise-grade reliability with developer-friendly features, providing everything you need to build and scale your applications.
@@ -69,6 +110,7 @@ features:
     - title: Infinite Scalability
       description: Built on cloud-native architecture that automatically scales to meet any demand.
       icon: i-lucide-chart-bar
+
 testimonials:
   headline: Histórias de Sucesso
   title: Trabalho que inspira
@@ -134,16 +176,14 @@ testimonials:
         description: Integration Specialist at TechFlow
         avatar:
           src: https://i.pravatar.cc/120?img=14
+
 cta:
   title: Próximos Passos
   description: Se você deseja saber mais sobre como podemos ajudá-lo a alcançar seus objetivos, entre em contato conosco para agendar uma conversa. Estamos ansiosos para conhecer seus desafios e apresentar soluções personalizadas que o ajudarão a ter sucesso.
   links:
-    - label: Cursos
-      to: 'https://ui.nuxt.com/pro/purchase'
-      target: _blank
-      icon: i-lucide-shopping-cart
-    - label: Dúvidas
-      to: 'https://ui.nuxt.com/getting-started/license'
-      trailingIcon: i-lucide-circle-help
+    - label: Entre em contato
+      to: 'https://wa.link/w5dy99'
+      icon: i-ri-whatsapp-line
       target: _blank
       variant: subtle
+      size: xl
