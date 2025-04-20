@@ -107,7 +107,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
     // Campo anti-spam (honeypot)
     formData.append('b_35835573dce9ecd1ed104ac0a_d5f4907ca7', '')
 
-    const response = await fetch('https://politicaboa.us4.list-manage.com/subscribe/post?u=35835573dce9ecd1ed104ac0a&id=d5f4907ca7&f_id=0022b1e0f0', {
+    const response = await fetch('https://politicaboa.us4.list-manage.com/subscribe/post?u=35835573dce9ecd1ed104ac0a&amp;id=d5f4907ca7&amp;f_id=0026b1e0f0', {
       method: 'POST',
       body: formData,
       mode: 'no-cors'
