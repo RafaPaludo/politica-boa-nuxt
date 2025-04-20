@@ -38,7 +38,7 @@ const cardUI = {
 */
 
 const heroUi = {
-  container: 'lg:bg-[url(/img/professor-paludo.png)] bg-none bg-no-repeat bg-top bg-right py-8 sm:py-16 lg:py-32'
+  container: 'lg:bg-[url(/img/professor-paludo.png)] bg-none bg-no-repeat bg-top bg-right py-8 sm:py-16 lg:py-32 sm:gap-y-16'
 }
 
 useSeoMeta({
@@ -72,7 +72,7 @@ useSeoMeta({
         >
       </div>
 
-      <div class="w-full col-span-2 flex flex-col gap-12">
+      <div class="w-full col-span-2 flex flex-col gap-2">
         <SubscribeForm />
         <a href="#feature-0">
           <UIcon
@@ -132,11 +132,11 @@ useSeoMeta({
                 <h4 class="font-bold text-2xl">
                   {{ item.title }}
                 </h4>
-    
+
                 <h5 class="mb-4">
                   {{ item.work }}
                 </h5>
-    
+
                 <h5 class="mb-4 min-h-[96px]">
                   {{ item.description }}
                 </h5>

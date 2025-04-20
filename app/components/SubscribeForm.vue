@@ -2,72 +2,78 @@
   <UForm
     :state="state"
     :schema="schema"
-    class="lg:gap-4 lg:flex w-full p-6 rounded-lg shadow-md dark:bg-(--ui-bg)"
+    class="lg:gap-4 lg:flex flex-col w-full py-4 px-6 rounded-lg shadow-md dark:bg-(--ui-bg)"
     @submit="onSubmit"
   >
-    <UFormField
-      label="Nome completo"
-      name="FNAME"
-      class="lg:h-[84px] flex-2"
-    >
-      <UInput
-        v-model="state.FNAME"
-        placeholder="Seu nome completo"
-        class="w-full"
-        size="xl"
-      />
-    </UFormField>
+    <h2 class="font-bold text-lg">
+      Fique por dentro das novidades. Inscreva-se!
+    </h2>
 
-    <UFormField
-      label="Endereço de e-mail"
-      name="EMAIL"
-      class="lg:h-[84px] flex-2"
-    >
-      <UInput
-        v-model="state.EMAIL"
-        type="email"
-        placeholder="seu@email.com"
-        class="w-full"
-        size="xl"
-      />
-    </UFormField>
-
-    <UFormField
-      label="Telefone"
-      name="PHONE"
-      class="lg:h-[84px] flex-2"
-    >
-      <UInput
-        v-model="state.PHONE"
-        v-maska="'(##) # ####-####'"
-        placeholder="(00) 00000-0000"
-        :maxlength="16"
-        class="w-full"
-        size="xl"
-      />
-    </UFormField>
-
-    <!-- Campo anti-spam (honeypot) - escondido -->
-    <div
-      style="position: absolute; left: -5000px;"
-      aria-hidden="true"
-    >
-      <input
-        type="text"
-        name="b_35835573dce9ecd1ed104ac0a_d5f4907ca7"
-        tabindex="-1"
-        value=""
+    <div class="lg:gap-4 lg:flex w-full">
+      <UFormField
+        label="Nome completo"
+        name="FNAME"
+        class="lg:h-[84px] flex-2"
       >
-    </div>
+        <UInput
+          v-model="state.FNAME"
+          placeholder="Seu nome completo"
+          class="w-full"
+          size="xl"
+        />
+      </UFormField>
 
-    <div class="mt-6 flex-1">
-      <UButton
-        type="submit"
-        block
-        size="xl"
+      <UFormField
+        label="Endereço de e-mail"
+        name="EMAIL"
+        class="lg:h-[84px] flex-2"
       >
-        Cadastrar
-      </UButton>
+        <UInput
+          v-model="state.EMAIL"
+          type="email"
+          placeholder="seu@email.com"
+          class="w-full"
+          size="xl"
+        />
+      </UFormField>
+
+      <UFormField
+        label="Telefone"
+        name="PHONE"
+        class="lg:h-[84px] flex-2"
+      >
+        <UInput
+          v-model="state.PHONE"
+          v-maska="'(##) # ####-####'"
+          placeholder="(00) 00000-0000"
+          :maxlength="16"
+          class="w-full"
+          size="xl"
+        />
+      </UFormField>
+
+      <!-- Campo anti-spam (honeypot) - escondido -->
+      <div
+        style="position: absolute; left: -5000px;"
+        aria-hidden="true"
+      >
+        <input
+          type="text"
+          name="b_35835573dce9ecd1ed104ac0a_d5f4907ca7"
+          tabindex="-1"
+          value=""
+        >
+      </div>
+
+      <div class="mt-6 flex-1">
+        <UButton
+          type="submit"
+          block
+          size="xl"
+        >
+          Cadastrar
+        </UButton>
+      </div>
     </div>
   </UForm>
 </template>
@@ -113,7 +119,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
 
     toast.add({
       title: 'Sucesso',
-      description: `E-mail enviado com sucesso! Verifique sua caixa de entrada e na lista de spam.`,
+      description: `Solicitação enviada com sucesso! Verifique sua caixa de entrada e na lista de spam.`,
       color: 'success'
     })
 
