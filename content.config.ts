@@ -15,6 +15,7 @@ const linkSchema = z.object({
   to: z.string().nonempty(),
   icon: z.string().optional(),
   size: sizeEnum.optional(),
+  block: z.boolean().optional(),
   trailing: z.boolean().optional(),
   target: z.string().optional(),
   color: colorEnum.optional(),
@@ -34,8 +35,9 @@ const featureItemSchema = z.object({
 })
 
 const sectionSchema = z.object({
-  headline: z.string().optional(),
   ...baseSchema,
+  headline: z.string().optional(),
+  icon: z.string().optional(),
   features: z.array(featureItemSchema)
 })
 
@@ -89,11 +91,19 @@ export const collections = {
           reverse: z.boolean().optional()
         })
       ),
+      leader: sectionSchema.extend({
+        ...baseSchema,
+        image: z.string().nonempty(),
+        features: z.array(featureItemSchema),
+        links: z.array(linkSchema),
+        quote: z.string().nonempty()
+      }),
       members: sectionSchema.extend({
         items: z.array(
           sectionSchema.extend({
             src: z.string().nonempty(),
-            work: z.string().nonempty()
+            work: z.string().nonempty(),
+            links: z.array(linkSchema)
           })
         )
       }),
@@ -161,5 +171,22 @@ export const collections = {
     source: '3.blog.yml',
     type: 'data',
     schema: sectionSchema
+  }),
+  professorPaludo: defineCollection({
+    type: 'data',
+    source: '4.professor-paludo.yml',
+    schema: z.object({
+      ...baseSchema,
+      hero: sectionSchema.extend({
+        image: z.string().nonempty(),
+        features: z.array(featureItemSchema),
+        links: z.array(linkSchema),
+        quote: z.string().nonempty()
+      }),
+      content: sectionSchema.extend({
+        title: z.string().nonempty(),
+        features: z.array(featureItemSchema)
+      })
+    })
   })
 }

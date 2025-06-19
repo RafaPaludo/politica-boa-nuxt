@@ -1,0 +1,38 @@
+title: "Prof. José Roberto Paludo - Liderança que Transforma a Política Brasileira"
+description: "Fundador e Presidente do IPB | Doutor em Sociologia Política | Especialista em Gestão Pública Participativa | Consultor do SEBRAE/SC e Governo Federal"
+navigation: true
+
+hero: 
+  icon: i-lucide-handshake
+  title: Olá, sou o Professor Paludo
+  image: /img/prof_paludo/prof_paludo.jpg  
+  features:
+    - title: "Da sala de aula ao centro das decisões políticas"
+      description: "Doutor e Mestre em Sociologia Política (UFSC), Máster em Ciência Política Aplicada pela FIIAPP (Madrid/Espanha) e graduado em História e Sociologia com formação complementar em mediação, holomentoring e coaching em ontologia da linguagem"
+      icon: i-lucide-graduation-cap
+
+    - title: "Consultor de instituições estratégicas"
+      description: "Consultor do SEBRAE/SC e Consultor da Organização dos Estados Iberoamericanos (OEI) para o Programa de Participação Social da Secretaria-Geral da Presidência da República"
+      icon: i-lucide-briefcase
+
+    - title: "Formador de novas gerações"
+      description: "Atuou como professor no Mestrado Profissional na Unifacvest (Lages/SC) e coordenador do MBA em Inovação na Gestão Pública na FASA (Santo Ângelo/RS)"
+      icon: i-lucide-users
+  links:
+    - label: "Agendar Conversa"
+      to: 'https://wa.link/w5dy99'
+      icon: 'i-lucide-calendar-plus'
+      color: 'primary'
+      size: 'lg'
+      target: _blank
+
+content: 
+  title: "ASSESSORIA DE PLANEJAMENTO ESTRATÉGICO"
+  features:
+    - description: O professor José Roberto Paludo atua no campo sindical desde 1992 e na área de planejamento estratégico desde 1998, acompanhando campanhas eleitorais e mandatos parlamentares federais e estaduais em Santa Catarina, Paraná e São Paulo, prefeituras municipais em Santa Catarina e movimento sindical nos três Estados do Sul e entidades como Federação dos Municípios Catarinenses, União de Vereadores do Estado de Santa Catarina e Escola do Legislativo da Assembleia Legislativa de Santa Catarina, além de campanhas e mandatos de universidades federais, estaduais e institutos federais de educação.
+
+    - description: Com base nessa experiência, o professor Paludo aplica uma metodologia de trabalho que consiste na construção do planejamento estratégico baseado em tomada de decisões coletivas, combinando diferentes escolas de planejadores e dinâmicas ágeis para mediação e interação de pessoas.
+
+    - description: É convidado como palestrante e conferencista em diversos eventos e fóruns para abordar o tema do planejamento estratégico. Estudioso do tema de participação e movimento sindical com diversas publicações de livros, capítulos de livros e artigos científicos nesta área.
+
+    - description: Esse processo de assessoria é prestado diretamente pelo professor Paludo, que possui um CNPJ inscrito no Simples Nacional, fornecendo nota fiscal e relatórios periódicos dos serviços prestados, além de sistematização e publicações de resultados quando se trata de projetos específicos, que resultou a fundação recente (2025) do Instituto Política Boa (IPB).

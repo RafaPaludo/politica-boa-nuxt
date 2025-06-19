@@ -3,7 +3,7 @@ const route = useRoute()
 
 const { data: post } = await useAsyncData(route.path, () => queryCollection('posts').path(route.path).first())
 if (!post.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Post not found', fatal: true })
+  throw createError({ statusCode: 404, statusMessage: 'Artigo não encontrado!', fatal: true })
 }
 
 const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
@@ -27,7 +27,7 @@ if (post.value.image?.src) {
     url: post.value.image.src
   })
 } else {
-  defineOgImageComponent('Saas', {
+  defineOgImageComponent('Default', {
     headline: 'Blog'
   })
 }
@@ -85,7 +85,10 @@ if (post.value.image?.src) {
         v-if="post?.body?.toc?.links?.length"
         #right
       >
-        <UContentToc :links="post.body.toc.links" />
+        <UContentToc
+          title="Nesta página"
+          :links="post.body.toc.links"
+        />
       </template>
     </UPage>
   </UContainer>

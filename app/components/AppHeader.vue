@@ -1,29 +1,40 @@
 <script setup lang="ts">
 import { siteInfo } from '~/config/siteInfo'
-// const route = useRoute()
-// const items = computed(() => [{
-//   label: 'Docs',
-//   to: '/docs',
-//   active: route.path.startsWith('/docs')
-// }, {
-//   label: 'Pricing',
-//   to: '/pricing'
-// }, {
-//   label: 'Blog',
-//   to: '/blog'
-// }])
+
+const items = computed(() => [
+  {
+    label: 'Quem somos',
+    icon: 'i-lucide-users',
+    to: '/professor-paludo',
+    children: [
+      {
+        label: 'Prof Paludo',
+        to: '/professor-paludo'
+      }
+    ]
+  },
+  {
+    label: 'Blog',
+    to: '/blog',
+    icon: 'i-lucide-book-open'
+  }
+])
 </script>
 
 <template>
   <UHeader>
     <template #left>
-      <NuxtLink to="/">
-        <LogoPro class="w-auto h-10 shrink-0" />
+      <NuxtLink
+        to="/"
+        title="Home"
+      >
+        <LogoPro class="w-auto h-10 shrink-0 h-[50px]" />
       </NuxtLink>
     </template>
 
     <UNavigationMenu
       variant="link"
+      :items="items"
     />
 
     <template #right>
@@ -50,6 +61,7 @@ import { siteInfo } from '~/config/siteInfo'
 
     <template #body>
       <UNavigationMenu
+        :items="items"
         orientation="vertical"
         class="-mx-2.5"
       />

@@ -1,5 +1,5 @@
-title: Política Boa
-description: Nuxt UI Pro is a collection of premium Vue components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.
+title: Instituto Política Boa - IPB
+description: O IPB - Instituto Política Boa liderado por José Roberto Paludo, ofere mentoria, planejamento estratégico e assessoria política para mandatos, sindicatos e organizações. Transforme sua liderança!
 navigation: false
 hero:
   title: O progresso que você busca, entregue pelo nosso Instituto
@@ -7,7 +7,7 @@ hero:
 
 sections:
   - title: Planejamento Estratégico
-    description: Transformar sua visão em realidade, definindo um caminho claro e eficaz para atingir seus objetivos.
+    description: Transformar sua visão em realidade, definindo um caminho direto e eficaz para atingir seus objetivos.
     id: planning
     orientation: horizontal
     features:
@@ -24,7 +24,7 @@ sections:
         description: Superar desafios de liderança, aprimorar suas habilidades e tomar decisões mais assertivas, com o apoio de tecnologias sociais interativas que facilitam o autoconhecimento e o desenvolvimento pessoal.
         icon: i-lucide-user-round
 
-  - title: Conteúdos Políticos e Organizacionais
+  - title: Cursos e Conteúdos Políticos e Organizacionais
     description: Manter-se atualizado e relevante em um ambiente em constante mudança, com acesso a informações e conhecimentos de ponta.
     orientation: horizontal
     features:
@@ -49,44 +49,89 @@ sections:
         description: Simplificar tarefas complexas, automatizar processos e liberar tempo para se concentrar no que realmente importa, com o apoio de softwares e aplicativos desenvolvidos sob medida para suas necessidades.
         icon: i-lucide-monitor-cog
 
+leader:
+  title: Quem é Professor Paludo?
+  description: Fundador e Diretor do IPB
+  image: /img/leader/ipb_jose_roberto_paludo.png
+  features:
+    - title: 
+      description: Doutor em Sociologia Política (UFSC) e especialista em Planejamento Estratégico
+      icon: i-lucide-check
+
+    - title:
+      description: 30+ anos assessorando organizações, sindicatos e universidades
+      icon: i-lucide-check
+
+    - title:
+      description: Metodologia própria de decisão coletiva aplicada em diversos estados
+      icon: i-lucide-check
+
+    - title:
+      description: Autor de livros e artigos sobre políticas sociais
+      icon: i-lucide-check
+
+  links:
+    - label: 'Agendar consultoria'
+      to: 'https://wa.link/w5dy99'
+      icon: 'i-lucide-calendar-plus'
+      color: 'primary'
+      size: 'lg'
+      target: _blank
+
+    - label: 'Ver perfil completo'
+      to: '/professor-paludo'
+      icon: 'i-lucide-book-open-text'
+      variant: 'subtle'
+      size: 'lg'
+
 members:
-  title: Membros
+  title: Conheça os demais membros do IPB
   description: "Nosso time é formado por especialistas em diversas áreas, prontos para ajudar você a alcançar seus objetivos."
-  items: 
+  items:
     - title: Sibelli D’Agostini
-      work: Taquigrafia
-      description: Formada em letras e direito com mais de 20 anos de experiência em redação e revisão textual.
-      src: /img/members/imagem_membro_quadrado.jpg
+      work: Tesoureira
+      description: Graduada em Direito pela Univali/SJ e em Letras (Português e Espanhol) pela UFSC. Analista Legislativo da Alesc há 21 anos. Especialização em Direito Público e em Processo do Trabalho. Mestre em Práticas Transculturais.
+      src: /img/members/ipb_sibelli_dag.png
+      links: 
+        - label: Instagram
+          to: https://www.instagram.com/sibellidagostini/
+          icon: i-ri-instagram-fill
 
-    - title: Gabriel Bedin Slevinski
-      work: Membro
-      description: Professor e desenvolvedor de conteúdos com mais de 10 anos de atuação em ambas as áreas
-      src: /img/members/imagem_membro_quadrado.jpg
-
-    - title: Francis Fróes
-      work: Membro
-      description: Professor e publicitário com mais de 30 anos de experiência em criação e desenvolvimento de campanhas publicitárias.
-      src: /img/members/imagem_membro_quadrado.jpg
-
-    - title: Tiago Vergara Bitencourt
-      work: Membro
-      description: Eletricitário formado em TI e engenharia civil com mais de 30 anos de atuação TI e redes sociais
-      src: /img/members/imagem_membro_quadrado.jpg
-
-    - title: Mario César  D’Agostini
-      work: Membro
-      description: Advogado e empresário com mais de 30 anos de atuação no serviço público, no direito e na administração de empresas.
-      src: /img/members/imagem_membro_quadrado.jpg
+    - title: Mario Cezar D’Agostini
+      work: Secretário
+      description: Servidor do MPF há 31 anos. Gestraduado em Direito pela Unisul. Especialização em Direito Eleitoral (Pós-Graduação Lato Sensu). Assessor do Procurador Regional Eleitoral por 11 anos e advogado.
+      src: /img/members/ipb_mario_dag.png
+      links: 
+        - label: Instagram
+          to: https://www.instagram.com/marinho.laor/
+          icon: i-ri-instagram-fill
 
     - title: Rafael Ricardo P. Paludo
-      work: Membro
-      description: Graduado em redes sociais com mais de cinco anos de atuação no desenvolvimento de software de empresas de tecnologia e do ramo financeiro.
-      src: /img/members/imagem_membro_quadrado.jpg
+      work: Presidente do Conselho Fiscal
+      description: Técnico em Gestão de TI e desenvolvedor Full Stack com 6 anos de experiência no setor financeiro e varejo. Especializado em soluções web de alta performance e gestão de tecnologia.
+      src: /img/members/ipb_rafael_paludo.png
+      links: 
+        - label: Github
+          to: https://github.com/RafaPaludo
+          icon: i-ri-github-fill
+        - label: Linkedin
+          to: https://www.linkedin.com/in/rafael-paludo-93a48413b/
+          icon: i-ri-linkedin-box-fill
+    
+    - title: Gabriel Bedin Slevinski
+      work: Vice-Presidente
+      description: Mestre em Ciências Humanas pela UFFS e licenciado em Ciências Sociais pela UFSC. Possui mais de 10 anos de experiência no ensino de Sociologia e Filosofia. 
+      src: /img/members/ipb_gabriel.png
 
     - title: Eduardo José P. Paludo
-      work: Membro
+      work: Conselheiro Fiscal
       description: Técnico em administração e gestão em redes sociais.
-      src: /img/members/imagem_membro_quadrado.jpg
+      src: /img/members/ipb_eduardo.png
+
+    # - title: Tiago Bitencourt Vergara
+    #   work: Conselheiro Fiscal
+    #   description: Técnico Industrial em Eletromecânica pela ETFPEL. Acadêmico de Engenharia Elétrica pela Unisul. Coordenador do SINERGIA e do Coletivo Nacional dos Eletricitários.
+    #   src: /img/members/ipb_quadrado.jpg
 
 features:
   title: Features That Set Us Apart
@@ -178,12 +223,18 @@ testimonials:
           src: https://i.pravatar.cc/120?img=14
 
 cta:
-  title: Próximos Passos
+  title: Entre em contato
   description: Se você deseja saber mais sobre como podemos ajudá-lo a alcançar seus objetivos, entre em contato conosco para agendar uma conversa. Estamos ansiosos para conhecer seus desafios e apresentar soluções personalizadas que o ajudarão a ter sucesso.
   links:
-    - label: Entre em contato
+    - label: Contato via Whatsapp
       to: 'https://wa.link/w5dy99'
       icon: i-ri-whatsapp-line
+      target: _blank
+      variant: subtle
+      size: xl
+    - label: Envie um e-mail
+      to: 'mailto:contato@politicaboa.com.br?subject=Contato&body=Olá, gostaria de mais informações sobre o IPB'
+      icon: i-ri-mail-send-line
       target: _blank
       variant: subtle
       size: xl

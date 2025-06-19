@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import image1 from '/img/ogImages/default_home.png'
+
 const colorMode = useColorMode()
 const config = useRuntimeConfig()
 
@@ -16,7 +18,7 @@ useHead({
     { rel: 'icon', href: '/favicon.ico' }
   ],
   htmlAttrs: {
-    lang: 'en'
+    lang: 'pt-br'
   },
   bodyAttrs: {
     class: 'scroll-smooth'
@@ -37,10 +39,9 @@ useHead({
 })
 
 useSeoMeta({
-  titleTemplate: '%s - Nuxt UI Pro - SaaS template',
-  ogImage: 'https://saas-template.nuxt.dev/social-card.png',
-  twitterImage: 'https://saas-template.nuxt.dev/social-card.png',
-  twitterCard: 'summary_large_image'
+  titleTemplate: '%s - Instituto Política Boa - IPB',
+  ogImage: image1,
+  twitterImage: image1
 })
 
 const { data: navigation } = await useAsyncData('navigation', () => queryCollectionNavigation('docs'), {
@@ -98,13 +99,5 @@ provide('navigation', navigation)
 </template>
 
 <style>
-.page-enter-active,
-.page-leave-active {
-  transition: all 0.4s;
-}
-.page-enter-from,
-.page-leave-to {
-  opacity: 0;
-  filter: blur(1rem);
-}
+
 </style>

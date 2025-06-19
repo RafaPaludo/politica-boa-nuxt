@@ -1,18 +1,34 @@
 <script setup lang="ts">
 const columns = [{
-  label: 'Recursos',
-  children: [{
-    label: 'Help center'
-  }]
+  label: 'Fale com a gente',
+  children: [
+    {
+      label: 'Whatsapp',
+      to: 'https://wa.link/w5dy99',
+      target: '_blank'
+    },
+    {
+      label: 'Telefone',
+      to: 'tel:+55 48 99121-8168',
+      target: '_blank'
+    },
+    {
+      label: 'Email',
+      to: 'mailto:contato@politicaboa.com.br?subject=Contato&body=Olá, gostaria de mais informações sobre o IPB',
+      target: '_self'
+    }
+  ]
 }, {
-  label: 'Sobre',
+  label: 'Cursos',
   children: [{
     label: 'Afiliados'
   }]
 }, {
-  label: 'Companhia',
+  label: 'Conteúdos',
   children: [{
-    label: 'Blog'
+    label: 'Blog',
+    to: '/blog',
+    target: '_self'
   }]
 }]
 </script>
