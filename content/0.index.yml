@@ -52,7 +52,7 @@ sections:
 leader:
   title: Quem é Professor Paludo?
   description: Fundador e Diretor do IPB
-  image: /img/leader/ipb_jose_roberto_paludo.png
+  image: /img/index/leader/ipb_jose_roberto_paludo.png
   features:
     - title: 
       description: Doutor em Sociologia Política (UFSC) e especialista em Planejamento Estratégico
@@ -91,7 +91,7 @@ members:
     - title: Sibelli D’Agostini
       work: Tesoureira
       description: Graduada em Direito pela Univali/SJ e em Letras (Português e Espanhol) pela UFSC. Analista Legislativo da Alesc há 21 anos. Especialização em Direito Público e em Processo do Trabalho. Mestre em Práticas Transculturais.
-      src: /img/members/ipb_sibelli_dag.png
+      src: /img/index/members/ipb_sibelli_dag.png
       links: 
         - label: Instagram
           to: https://www.instagram.com/sibellidagostini/
@@ -100,7 +100,7 @@ members:
     - title: Mario Cezar D’Agostini
       work: Secretário
       description: Servidor do MPF há 31 anos. Gestraduado em Direito pela Unisul. Especialização em Direito Eleitoral (Pós-Graduação Lato Sensu). Assessor do Procurador Regional Eleitoral por 11 anos e advogado.
-      src: /img/members/ipb_mario_dag.png
+      src: /img/index/members/ipb_mario_dag.png
       links: 
         - label: Instagram
           to: https://www.instagram.com/marinho.laor/
@@ -109,7 +109,7 @@ members:
     - title: Rafael Ricardo P. Paludo
       work: Presidente do Conselho Fiscal
       description: Técnico em Gestão de TI e desenvolvedor Full Stack com 6 anos de experiência no setor financeiro e varejo. Especializado em soluções web de alta performance e gestão de tecnologia.
-      src: /img/members/ipb_rafael_paludo.png
+      src: /img/index/members/ipb_rafael_paludo.png
       links: 
         - label: Github
           to: https://github.com/RafaPaludo
@@ -121,17 +121,17 @@ members:
     - title: Gabriel Bedin Slevinski
       work: Vice-Presidente
       description: Mestre em Ciências Humanas pela UFFS e licenciado em Ciências Sociais pela UFSC. Possui mais de 10 anos de experiência no ensino de Sociologia e Filosofia. 
-      src: /img/members/ipb_gabriel.png
+      src: /img/index/members/ipb_gabriel.png
 
     - title: Eduardo José P. Paludo
       work: Conselheiro Fiscal
       description: Técnico em administração e gestão em redes sociais.
-      src: /img/members/ipb_eduardo.png
+      src: /img/index/members/ipb_eduardo.png
 
     # - title: Tiago Bitencourt Vergara
     #   work: Conselheiro Fiscal
     #   description: Técnico Industrial em Eletromecânica pela ETFPEL. Acadêmico de Engenharia Elétrica pela Unisul. Coordenador do SINERGIA e do Coletivo Nacional dos Eletricitários.
-    #   src: /img/members/ipb_quadrado.jpg
+    #   src: /img/index/members/ipb_quadrado.jpg
 
 features:
   title: Features That Set Us Apart

@@ -59,7 +59,7 @@ useSeoMeta({
     >
       <img
         :src="profPaludo"
-        alt="App screenshot"
+        alt="Foto do Professor Paludo"
         class="rounded-lg "
       >
       <LazyStarsBg />

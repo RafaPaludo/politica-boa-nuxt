@@ -1,0 +1,28 @@
+title: "Prof. José Roberto Paludo - Liderança que Transforma a Política Brasileira"
+description: "Fundador e Presidente do IPB | Doutor em Sociologia Política | Especialista em Gestão Pública Participativa | Consultor do SEBRAE/SC e Governo Federal"
+navigation: false
+
+hero:
+  title: IPB - Instituto Política Boa
+  description: Planejamento | Mentoria | Cursos | Palestras
+  image: /img/midias/prof_paludo_square.jpg
+  links:
+    - label: Whatsapp
+      to: 'https://wa.link/u0j421'
+      icon: i-ri-whatsapp-line
+
+    - label: Site
+      to: 'https://politicaboa.com.br/'
+      icon: i-lucide-link
+
+    - label: Instagram
+      to: 'https://www.instagram.com/institutopoliticaboa/'
+      icon: i-ri-instagram-fill
+
+    - label: TikTok
+      to: 'https://www.tiktok.com/@politica.boa'
+      icon: i-ri-tiktok-fill
+
+    - label: Youtube
+      to: 'https://www.youtube.com/@Institutopoliticaboa'
+      icon: i-ri-youtube-fill

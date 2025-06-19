@@ -188,5 +188,17 @@ export const collections = {
         features: z.array(featureItemSchema)
       })
     })
+  }),
+  midias: defineCollection({
+    type: 'data',
+    source: '5.midias.yml',
+    schema: z.object({
+      ...baseSchema,
+      hero: z.object({ 
+        ...baseSchema,
+        image: z.string().nonempty(),
+        links: z.array(linkSchema)
+      }),
+    })
   })
 }
