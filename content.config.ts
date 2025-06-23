@@ -200,5 +200,14 @@ export const collections = {
         links: z.array(linkSchema)
       }),
     })
-  })
+  }),
+  lps: defineCollection({
+    type: 'page',
+    source: '6.lp/**/*',
+    schema: z.object({
+      title: z.string().nonempty(),
+      description: z.string().nonempty(),
+      image: z.object({ src: z.string().nonempty() })
+    })
+  }),
 }
