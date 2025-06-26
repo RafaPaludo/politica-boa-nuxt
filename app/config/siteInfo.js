@@ -7,6 +7,6 @@ export const siteInfo = {
   contact: {
     phone: '(48) 99968-5226',
     email: 'paludoprofessor@gmail.com',
-    linkWhatsapp: 'https://wa.link/u0j421'
+    linkWhatsapp: 'https://wa.link/w5dy99'
   }
 }
