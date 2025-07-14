@@ -7,6 +7,14 @@ hero:
   description: Planejamento | Mentoria | Cursos | Palestras
   image: /img/midias/prof_paludo_square.jpg
   links:
+    - label: Mapa da Mina - Gratuito
+      to: https://bit.ly/4loOT11
+      icon: i-lucide-map
+
+    - label: Curso Planejamento Estratégico
+      to: 'https://go.hotmart.com/K100483436O'
+      icon: i-lucide-area-chart
+
     - label: Whatsapp
       to: 'https://wa.link/w5dy99'
       icon: i-ri-whatsapp-line
