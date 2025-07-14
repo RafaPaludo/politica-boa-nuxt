@@ -2,12 +2,15 @@
 const route = useRoute()
 
 const { data: lp } = await useAsyncData(route.path, () => queryCollection('lps').path(route.path).first())
+
 if (!lp.value) {
   throw createError({ statusCode: 404, statusMessage: 'Página não encontrada!', fatal: true })
 }
 
 const title = lp.value.seo?.title || lp.value.title
 const description = lp.value.seo?.description || lp.value.description
+const tags = lp.value?.tags || ''
+const downloadFile = lp.value?.file || ''
 const formSuccess = ref(false)
 
 useSeoMeta({
@@ -39,11 +42,11 @@ if (lp.value.image?.src) {
     <div v-if="formSuccess">
       <h2 class="text-4xl font-bold text-center">Sucesso!</h2>
       <p class="py-5 text-center">
-        Clique no botão abaixo e baixe seu Manual.
+        Clique no botão abaixo e baixe o material.
       </p>
 
       <ULink
-        to="https://mcusercontent.com/35835573dce9ecd1ed104ac0a/files/dfd01b67-01c5-c559-eed0-0d6479814c4f/MANUAL_DE_PLANEJAMENTO_ESTRAT_Eacute_GICO_DE_MANDATO.pdf"
+        :to="downloadFile"
         target="_blank"
       >
         <UButton
@@ -51,7 +54,7 @@ if (lp.value.image?.src) {
           size="xl"
           class="py-5"
         >
-          Baixar PDF
+          Baixar material
         </UButton>
       </ULink>
     </div>
@@ -62,7 +65,7 @@ if (lp.value.image?.src) {
         :description="lp.description"
         orientation="horizontal"
       >
-        <FormsLandingPage v-model="formSuccess"/>
+        <FormsLandingPage v-model="formSuccess" :tags="tags" />
       </UPageHero>
     </div>
   </UContainer>

@@ -92,13 +92,17 @@ const state = reactive<Partial<Schema>>({})
 
 const toast = useToast()
 
+const props = defineProps<{
+  tags?: string
+}>()
+
 async function onSubmit(event: FormSubmitEvent<Schema>) {
   try {
     // Enviar para o Mailchimp
     const formData = new FormData()
     formData.append('u', '35835573dce9ecd1ed104ac0a')
     formData.append('id', 'd5f4907ca7')
-    formData.append('tags', '7461440')
+    formData.append('tags', props.tags || '')
     formData.append('FNAME', event.data.FNAME)
     formData.append('EMAIL', event.data.EMAIL)
     formData.append('PHONE', event.data.PHONE)

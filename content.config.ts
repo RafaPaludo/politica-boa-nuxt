@@ -207,7 +207,9 @@ export const collections = {
     schema: z.object({
       title: z.string().nonempty(),
       description: z.string().nonempty(),
-      image: z.object({ src: z.string().nonempty() })
+      image: z.object({ src: z.string().nonempty() }),
+      tags: z.string().optional(),
+      file: z.string().optional(),
     })
   }),
 }
