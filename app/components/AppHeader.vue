@@ -29,10 +29,12 @@ const actions = ref([
   {
     label: 'Ingresso',
     icon: 'i-lucide-ticket',
+    to: 'https://www.sympla.com.br/evento/1-forum-brasileiro-de-inovacao-sindical/3049648'
   },
   {
     label: 'Ver mais',
-    icon: 'i-lucide-arrow-right'
+    icon: 'i-lucide-arrow-right',
+    to: 'https://fbis2025.com.br/'
   }
 ])
 </script>
