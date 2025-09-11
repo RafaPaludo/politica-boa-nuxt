@@ -14,14 +14,31 @@ const items = computed(() => [
     ]
   },
   {
+    label: 'Eventos',
+    to: '/eventos',
+    icon: 'i-lucide-calendar-clock'
+  },
+  {
     label: 'Blog',
     to: '/blog',
     icon: 'i-lucide-book-open'
   }
 ])
+
+const actions = ref([
+  {
+    label: 'Ingresso',
+    icon: 'i-lucide-ticket',
+  },
+  {
+    label: 'Ver mais',
+    icon: 'i-lucide-arrow-right'
+  }
+])
 </script>
 
 <template>
+  <UBanner title="Participe do 1º FBIS | Fórum Brasileiro de Inovação Sindical" :actions="actions" />
   <UHeader>
     <template #left>
       <NuxtLink
