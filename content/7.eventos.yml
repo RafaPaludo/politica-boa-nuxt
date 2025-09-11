@@ -1,0 +1,15 @@
+title: "Eventos"
+description: "Acompanhe nossa agenda de eventos"
+navigation: false
+
+event:
+  title: 1º Fórum Brasileiro de Inovação Sindical
+  description:
+    "O FBIS 2025 - Fórum Brasileiro de Inovação Sindical chega em sua primeira edição com uma proposta ousada e necessária: repensar o papel, as estratégias e os caminhos para o futuro do sindicalismo no Brasil. Em um cenário de transformações aceleradas no mundo do trabalho, o evento se propõe a reunir dirigentes sindicais, assessores técnicos, lideranças jovens, pesquisadores e parceiros institucionais para dois dias de intensos diálogos, oficinas práticas e construção coletiva."
+  image: /img/eventos/1FBIS.png
+  location: Castelmar Hotel, Florianópolis - SC
+  date: 24 e 25 out 2025 | 8:00 - 17:00
+  links:
+    - label: Comprar Ingresso
+      to: https://www.sympla.com.br/evento/1-forum-brasileiro-de-inovacao-sindical/3049648
+      icon: i-lucide-ticket

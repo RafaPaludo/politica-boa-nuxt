@@ -172,6 +172,20 @@ export const collections = {
     type: 'data',
     schema: sectionSchema
   }),
+  eventos: defineCollection({
+    type: 'data',
+    source: '7.eventos.yml',
+    schema: z.object({
+      ...baseSchema,
+      event: z.object({ 
+        ...baseSchema,
+        image: z.string().nonempty(),
+        location: z.string().nonempty(),
+        date: z.string().nonempty(),
+        links: z.array(linkSchema),
+      }),
+    })
+  }),
   professorPaludo: defineCollection({
     type: 'data',
     source: '4.professor-paludo.yml',
