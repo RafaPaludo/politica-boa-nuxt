@@ -8,7 +8,7 @@ hero:
   image: /img/midias/prof_paludo_square.jpg
   links:
     - label: Mapa da Mina - Gratuito
-      to: https://bit.ly/4loOT11
+      to: /lp/mapa-planejamento-estrategico
       icon: i-lucide-map
 
     - label: Curso Planejamento Estratégico

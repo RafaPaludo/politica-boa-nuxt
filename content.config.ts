@@ -203,6 +203,25 @@ export const collections = {
       })
     })
   }),
+  politicaPrivacidade: defineCollection({
+    type: 'data',
+    source: '8.politica-privacidade.yml',
+    schema: z.object({
+      ...baseSchema,
+      content: sectionSchema.extend({
+        title: z.string().nonempty(),
+        subtitle: z.string().nonempty(),
+        features: z.array(featureItemSchema)
+      })
+    })
+  }),
+  envioEmail: defineCollection({
+    type: 'data',
+    source: '9.envio-email.yml',
+    schema: z.object({
+      ...baseSchema
+    })
+  }),
   midias: defineCollection({
     type: 'data',
     source: '5.midias.yml',

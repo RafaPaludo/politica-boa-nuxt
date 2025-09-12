@@ -61,6 +61,17 @@
         >
       </div>
 
+      <div class="flex gap-2">
+        <UCheckbox class="items-center" v-model="state.CHECKBOX" label="Li e concordo com a"/>
+        <ULink
+          target="_blank"
+          raw
+          to="/politica-privacidade"
+          active-class="font-bold"
+          inactive-class="text-muted"
+        >Política de Privacidade</ULink>
+      </div>
+
       <div class="w-full mt-6">
         <UButton
           type="submit"
@@ -83,7 +94,8 @@ const formSuccess = defineModel()
 const schema = z.object({
   FNAME: z.string({ required_error: 'Obrigatório' }).min(2, 'Nome completo é obrigatório'),
   EMAIL: z.string({ required_error: 'Obrigatório' }).email('E-mail inválido'),
-  PHONE: z.string({ required_error: 'Obrigatório' }).length(16, 'Telefone inválido')
+  PHONE: z.string({ required_error: 'Obrigatório' }).length(16, 'Telefone inválido'),
+  CHECKBOX: z.boolean({ required_error: 'Obrigatório' })
 })
 
 type Schema = z.output<typeof schema>
@@ -124,6 +136,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
     state.FNAME = ''
     state.EMAIL = ''
     state.PHONE = ''
+    state.CHECKBOX = false
     formSuccess.value = true;
   } catch (error) {
     toast.add({
