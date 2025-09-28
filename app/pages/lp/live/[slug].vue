@@ -121,10 +121,10 @@ onMounted(() => {
       </UPageHero>
 
       <div v-if="formSuccess">
-        <h3 class="text-2xl mb-1">Sucesso!</h3>
+        <h3 class="text-2xl mb-1 text-center mx-auto">Sucesso!</h3>
 
-        <p class="py-5 text-center">
-          Entre no grupo do whatsapp e saiba quando a live for começar.
+        <p class="py-5 text-center text-lg">
+          Entre no grupo do whatsapp e receba o link para participar da live
         </p>
 
         <ULink
