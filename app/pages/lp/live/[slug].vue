@@ -90,7 +90,6 @@ onMounted(() => {
       <UPageHero
         :title="lp.title"
         :ui="{ container: 'flex flex-col lg:grid py-24 sm:py-32 lg:py-16 gap-16 sm:gap-y-24' }"
-        :description="lp.description"
         orientation="horizontal"
       >
         <img
@@ -98,6 +97,27 @@ onMounted(() => {
           alt="App screenshot"
           class="rounded-lg shadow-2xl ring ring-default"
         />
+
+        <template #title>
+          <h2 class="text-7xl font-bold text-(--ui-primary)">
+            {{ lp.title }}
+          </h2>
+        </template>
+
+        <template #description>
+          <h3 class="text-xl mb-3 font-bold">
+            Não perca a Live exclusiva com o Dr. Roberto Ruiz, dia 29/09 às 19h!
+          </h3>
+
+          <p class="mb-3">
+            Juntamente com o Professor Paludo, ele vai falar sobre saúde no ambiente de trabalho — um tema cada vez mais urgente diante de metas abusivas, assédio e esgotamento mental.
+          </p>
+
+          <p class="mb-3">
+            📌 O link da transmissão será enviado apenas para quem se cadastrar no grupo de WhatsApp através do <strong>formulário abaixo</strong>.
+            Garanta já sua participação e convide seus colegas para este encontro imperdível com uma das maiores autoridades em saúde do trabalhador.
+          </p>
+        </template>
       </UPageHero>
 
       <div v-if="formSuccess">

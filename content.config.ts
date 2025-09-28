@@ -241,6 +241,7 @@ export const collections = {
       title: z.string().nonempty(),
       description: z.string().nonempty(),
       image: z.object({ src: z.string().nonempty() }),
+      headline: z.string().optional(),
       tags: z.string().optional(),
       file: z.string().optional(),
       whats: z.string().optional(),
