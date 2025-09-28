@@ -19,13 +19,20 @@ const columns = [{
     }
   ]
 }, {
-  label: 'Cursos',
+  label: 'Sobre',
   children: [{
-    label: 'Afiliados'
+    label: 'Política de Privacidade',
+    to: '/politica-privacidade',
+    target: '_self'
   }]
 }, {
   label: 'Conteúdos',
   children: [{
+    label: 'Eventos',
+    to: '/eventos',
+    target: '_self'
+  },    
+  {
     label: 'Blog',
     to: '/blog',
     target: '_self'

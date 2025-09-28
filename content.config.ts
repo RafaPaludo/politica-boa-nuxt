@@ -243,6 +243,7 @@ export const collections = {
       image: z.object({ src: z.string().nonempty() }),
       tags: z.string().optional(),
       file: z.string().optional(),
+      whats: z.string().optional(),
     })
   }),
 }
