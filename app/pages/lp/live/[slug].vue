@@ -27,7 +27,7 @@ definePageMeta({
 useHead({
   script: [
     {
-      src: 'https://optin.entregaemails.com.br/accounts/200659/forms/2',
+      src: 'https://optin.entregaemails.com.br/accounts/200659/forms/3',
       async: 'true',
       defer: "true",
       type: 'text/javascript'
@@ -51,7 +51,7 @@ colorMode.value = 'light'
 
 function esperarIframeNaDiv(callback: (iframe: HTMLIFrameElement) => void) {
   const intervalo = setInterval(() => {
-    const container = document.getElementById('opt_2');
+    const container = document.getElementById('opt_3');
     if (!container) return;
 
     const iframe = document.querySelector('.iframe-opt-in') as HTMLIFrameElement | null;
@@ -69,7 +69,7 @@ onMounted(() => {
       iframeLoadedTimes.value = iframeLoadedTimes.value + 1
 
       if (iframeLoadedTimes.value === 2) {
-        const container = document.getElementById('opt_2');
+        const container = document.getElementById('opt_3');
 
         if (container instanceof HTMLElement) {
           container.style.display = "none";
@@ -106,16 +106,33 @@ onMounted(() => {
 
         <template #description>
           <h3 class="text-xl mb-3 font-bold">
-            Não perca a Live exclusiva com o Dr. Roberto Ruiz, dia 29/09 às 19h!
+            Não perca a próxima Live, dia 12/10 às 18h!
           </h3>
 
           <p class="mb-3">
-            Juntamente com o Professor Paludo, ele vai falar sobre saúde no ambiente de trabalho — um tema cada vez mais urgente diante de metas abusivas, assédio e esgotamento mental.
+            🎉 Tem coisa boa vindo aí... mas é surpresa! 👀
+          </p>
+
+          <p class="mb-3">
+            No próximo domingo vai rolar uma live daquelas — cheia de novidades, conteúdos incríveis e umas surpresinhas que você vai amar.
+            Mas olha... é tudo segredo por enquanto! 🤫
+          </p>
+          <p class="mb-3">
+            Quer saber quando a live vai começar?
+            Se inscreve no formulário aí embaixo e entra no nosso grupo do WhatsApp.
+            A gente vai te avisar por lá.
           </p>
 
           <p class="mb-3">
             📌 O link da transmissão será enviado apenas para quem se cadastrar no grupo de WhatsApp através do <strong>formulário abaixo</strong>.
-            Garanta já sua participação e convide seus colegas para este encontro imperdível com uma das maiores autoridades em saúde do trabalhador.
+            Garanta já sua participação e convide seus colegas.
+          </p>
+
+          <p class="text-5xl text-center mt-20">
+            <UIcon
+              name="i-solar-double-alt-arrow-down-line-duotone"
+              class="mt-4 size-12 mx-auto col-span-2 animate-bounce hidden lg:block"
+            />
           </p>
         </template>
       </UPageHero>
@@ -144,7 +161,7 @@ onMounted(() => {
       </div>
 
       <div class="iframe-container m-auto" v-else>
-        <div id="opt_2" class="h-full"></div>
+        <div id="opt_3" class="h-full"></div>
       </div>
     </div>
 

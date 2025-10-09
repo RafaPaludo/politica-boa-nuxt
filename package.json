@@ -14,11 +14,12 @@
   "dependencies": {
     "@iconify-json/lucide": "^1.2.34",
     "@iconify-json/simple-icons": "^1.2.30",
-    "@nuxt/content": "https://pkg.pr.new/@nuxt/content@bf24dfe",
+    "@nuxt/content": "3.6.3",
     "@nuxt/image": "^1.10.0",
     "@nuxt/ui-pro": "^3.0.2",
     "@standard-schema/spec": "^1.0.0",
     "@vueuse/nuxt": "^13.0.0",
+    "better-sqlite3": "^12.4.1",
     "maska": "^3.1.1",
     "nuxt": "^3.16.2",
     "nuxt-og-image": "^5.1.1",
