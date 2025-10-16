@@ -44,6 +44,10 @@ export default defineNuxtConfig({
     }
   },
 
+  image: {
+    provider: 'none'
+  },
+
   eslint: {
     config: {
       stylistic: {
