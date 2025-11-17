@@ -1,8 +1,6 @@
 <script setup lang="ts">
 const { data: page } = await useAsyncData('eventos', () => queryCollection('eventos').first())
 
-console.log(page)
-
 const sectionUI = {
   container: 'py-8 sm:py-8 lg:py-8 lg:pb-32 gap-8 sm:gap-8'
 }
@@ -38,19 +36,19 @@ useSeoMeta({
 
           <template #authors>
             <UButton
-              color="primary"
-              icon="i-lucide-ticket"
-              :to="page.event.links[0]?.to"
-            >
-              Comprar ingressos
-            </UButton>
-
-            <UButton
               color="neutral"
               icon="i-lucide-arrow-up-right"
               to="https://fbis2025.com.br/"
             >
               Ver página do evento
+            </UButton>
+
+            <UButton
+              color="neutral"
+              icon="i-lucide-calendar-clock"
+              to="/eventos/fbis/programacao"
+            >
+              Programação
             </UButton>
           </template>
         </UBlogPost>
