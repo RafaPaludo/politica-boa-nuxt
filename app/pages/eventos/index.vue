@@ -36,14 +36,6 @@ useSeoMeta({
 
           <template #authors>
             <UButton
-              color="primary"
-              icon="i-lucide-ticket"
-              :to="page.event.links[0]?.to"
-            >
-              Comprar ingressos
-            </UButton>
-
-            <UButton
               color="neutral"
               icon="i-lucide-arrow-up-right"
               to="https://fbis2025.com.br/"

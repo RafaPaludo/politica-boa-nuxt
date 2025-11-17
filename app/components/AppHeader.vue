@@ -24,23 +24,9 @@ const items = computed(() => [
     icon: 'i-lucide-book-open'
   }
 ])
-
-const actions = ref([
-  {
-    label: 'Ingresso',
-    icon: 'i-lucide-ticket',
-    to: 'https://www.sympla.com.br/evento/1-forum-brasileiro-de-inovacao-sindical/3049648'
-  },
-  {
-    label: 'Ver mais',
-    icon: 'i-lucide-arrow-right',
-    to: 'https://fbis2025.com.br/'
-  }
-])
 </script>
 
 <template>
-  <UBanner title="Participe do 1º FBIS | Fórum Brasileiro de Inovação Sindical" :actions="actions" />
   <UHeader>
     <template #left>
       <NuxtLink
