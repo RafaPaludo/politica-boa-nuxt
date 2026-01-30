@@ -21,7 +21,9 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      gtmId: process.env.NUXT_GTM_ID ?? ''
+      gtmId: process.env.NUXT_GTM_ID ?? '',
+      emailJsServiceId: process.env.NUXT_EMAILJS_SERVICE_ID ?? '',
+      emailJsUserId: process.env.NUXT_EMAILJS_USER_ID ?? '',
     }
   },
 

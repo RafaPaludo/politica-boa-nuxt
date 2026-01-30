@@ -47,6 +47,18 @@ useSeoMeta({
   description: page.value?.description,
   ogDescription: page.value?.description
 })
+
+useHead({
+  script: [
+    {
+      id: 'email-js-sdk',
+      src: 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js',
+      async: 'true',
+      defer: "true",
+      type: 'text/javascript'
+    }
+  ]
+})
 </script>
 
 <template>
